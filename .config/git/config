@@ -1,0 +1,17 @@
+[user]
+    name = swhoosh
+    email = 70953480+swhoosh@users.noreply.github.com
+
+[core]
+    excludesfile = /Users/woosh/.config/git/ignore
+    compression = 9
+    whitespace = error
+    preloadindex = true
+
+[init]
+    defaultBranch = main
+
+[status]
+    branch = true
+    showStash = true
+    showUntrackedFiles = all

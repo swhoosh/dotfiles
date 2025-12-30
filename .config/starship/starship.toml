@@ -1,0 +1,97 @@
+# Get editor completions based on the config schema
+palette = "tokyonight"
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+format = """$conda\
+$python\
+$virtualenv\
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$git_metrics\
+$cmd_duration\
+\n$character"""
+
+[character]
+success_symbol = "[➜](lavender)"
+error_symbol = "[](lightcoral)"
+vicmd_symbol = "[❮](green)"
+
+
+[directory]
+style = "blue"
+read_only = ""
+truncation_length = 4
+truncate_to_repo = false
+
+[git_branch]
+symbol = " "
+format = "[$symbol$branch]($style) "
+style = "white"
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style) )'
+style = "cyan"
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "white"
+
+[git_metrics]
+disabled = false
+
+[cmd_duration]
+format = "[$duration]($style)"
+style = "yellow"
+
+[conda]
+symbol = " "
+style = "cyan"
+format = "[$symbol$environment]($style) [―](bright-black) "
+
+[nodejs]
+format = "[$symbol($version)]($style) "
+
+[python]
+format = '[(\($virtualenv\)) (${version})]($style) [―](bright-black) '
+
+[custom.stunnel]
+when = "ps aux | grep stunnel | grep -v grep"
+command = "ps -o etime= -p $(ps aux | grep stunnel | grep -v grep | awk '{print $2}')"
+style = "red"
+format = "[TUNNEL OPEN for $output]($style)"
+
+
+[palettes.tokyonight]
+midnightblue = "#1f2335"
+charcoal = "#24283b"
+gunmetal = "#292e42"
+slateblue = "#3b4261"
+darkslateblue = "#414868"
+slategray = "#545c7e"
+darkslategray = "#565f89"
+slate = "#737aa2"
+lightslategray = "#a9b1d6"
+lightslateblue = "#c0caf5"
+steelblue = "#394b70"
+royalblue = "#3d59a1"
+skyblue = "#7aa2f7"
+lightskyblue = "#7dcfff"
+paleturquoise = "#b4f9f8"
+lavender = "#bb9af7"
+mediumpurple = "#9d7cd8"
+coral = "#ff9e64"
+goldenrod = "#ffc777"
+yellowgreen = "#c3e88d"
+turquoise = "#4fd6be"
+mediumturquoise = "#41a6b5"
+lightcoral = "#ff757f"
+crimson = "#c53b53"
+hotpink = "#ff007c"
+

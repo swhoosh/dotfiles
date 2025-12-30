@@ -1,0 +1,25 @@
+theme = tokyonight
+background = #090d17
+background-opacity = 0.90
+background-blur-radius = 100
+
+# font-family = JetBrainsMono
+font-family = BlexMono Nerd Font
+font-size = 14
+
+# Cursor stuff
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor
+
+macos-titlebar-style = hidden
+
+window-decoration = true
+window-padding-x = 10
+window-padding-y = 10
+window-padding-balance = true
+window-save-state = always
+window-height = 2000
+window-width = 2000
+
+auto-update = check
