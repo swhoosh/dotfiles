@@ -29,6 +29,28 @@
           "vertical" : 15
         }
       }
+    },
+    {
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0xf50f",
+          "productName" : "LAMZU THORN",
+          "vendorID" : "0x3554"
+        }
+      },
+      "pointer" : {
+        "acceleration" : 0,
+        "speed" : 0.3507
+      },
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : true
+        },
+        "speed" : {
+          "vertical" : 15.07
+        }
+      }
     }
   ]
 }
