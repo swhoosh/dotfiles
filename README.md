@@ -6,18 +6,14 @@
 brew install git
 
 # Clone this repo
-git clone https://github.com/swoosh/dotfiles.git ~/dotfiles
+git clone https://github.com/swhoosh/dotfiles.git ~/dotfiles
 
-# Install stow
-brew install stow
+# Brew Cask
+brew bundle --file ~/dotfiles/Brewfile
+sudo xattr -dr com.apple.quarantine /Applications/Hidden\ Bar.app
 
 # Run stow on dotfiles directory
 cd ~/dotfiles
 stow .
-
-# Brew Cask
-brew bundle --file Brewfile
-sudo xattr -dr com.apple.quarantine /Applications/Hidden\ Bar.app
-
 ```
 
