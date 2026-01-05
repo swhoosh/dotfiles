@@ -15,5 +15,9 @@ brew install stow
 cd ~/dotfiles
 stow .
 
+# Brew Cask
+brew bundle --file Brewfile
+sudo xattr -dr com.apple.quarantine /Applications/Hidden\ Bar.app
+
 ```
 
