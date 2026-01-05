@@ -1,0 +1,4 @@
+.config/raycast
+
+.config/zed/*
+!.config/zed/settings.json
