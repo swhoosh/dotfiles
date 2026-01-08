@@ -2,3 +2,5 @@
 
 .config/zed/*
 !.config/zed/settings.json
+
+.obsidian

@@ -1,0 +1,135 @@
+{
+    "workbench.iconTheme": "eq-material-theme-icons-ocean",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "cSpell.userWords": [
+        "astype",
+        "AWSV",
+        "boto",
+        "dataframe",
+        "datas",
+        "dotenv",
+        "dropna",
+        "fastapi",
+        "godub",
+        "huggingface",
+        "Interactor",
+        "interactors",
+        "matplotlib",
+        "mcts",
+        "nltk",
+        "OPENAI",
+        "opensearch",
+        "promptflow",
+        "pyplot",
+        "safetyness",
+        "Samichon",
+        "seaborn",
+        "stopwords",
+        "symp",
+        "tqdm",
+        "trakcare",
+        "vllm"
+    ],
+    "security.workspace.trust.untrustedFiles": "open",
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+    "isort.args": [
+        "--profile",
+        "black"
+    ],
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "editor.accessibilitySupport": "off",
+    "explorer.confirmDelete": false,
+    "notebook.lineNumbers": "on",
+    "explorer.confirmDragAndDrop": false,
+    "cSpell.language": "en,lorem",
+    "jupyter.askForKernelRestart": false,
+    "gitProjectManager.baseProjectsFolders": [
+        "/Users/woosh/wish-projects"
+    ],
+    "editor.minimap.enabled": false,
+    "editor.inlineSuggest.enabled": true,
+    "go.toolsManagement.autoUpdate": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "editor.fontSize": 14,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "workbench.colorTheme": "Tokyo Night",
+    "workbench.colorCustomizations": {
+        "editor.background": "#090d17",
+        "editor.selectionBackground": "#44475a",
+        "sideBar.background": "#090d17",
+        "sideBarSectionHeader.background": "#090d17",
+        "statusBar.background": "#005f87",
+        "activityBar.background": "#090d17",
+        "activityBar.activeBackground": "#1e2435",
+        "terminal.background": "#090d17",
+        "panel.background": "#0c121f",
+        "notebook.cellEditorBackground": "#090d17",
+        "notebook.cellBorderColor": "#090d17",
+        "notebook.focusedCellBorder": "#090d17",
+        "notebook.focusedEditorBorder": "#090d17",
+        "notebook.editorBackground": "#090d17",
+        "notebook.outputContainerBackgroundColor": "#090d17",
+        "notebook.outputContainerBorderColor": "#090d17",
+        "notebook.selectedCellBackground": "#090d17",
+        "statusBar.noFolderBackground": "#005f87",
+        "statusBar.debuggingBackground": "#005f87",
+        "statusBar.foreground": "#ffffff",
+        "statusBar.debuggingForeground": "#ffffff"
+    },
+    "terminal.integrated.inheritEnv": false,
+    "workbench.statusBar.visible": false,
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.csv": "gc-excelviewer-csv-editor"
+    },
+    "editor.fontLigatures": true,
+    "notebook.defaultFormatter": "ms-python.black-formatter",
+    "ruff.organizeImports": true,
+    "indentRainbow.indentSetter": {},
+    "editor.fontFamily": "Blex Mono Nerd Font",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "cursor.cpp.disabledLanguages": [
+        "plaintext",
+        "markdown",
+        "scminput"
+    ],
+    "json.schemas": [],
+    "editor.cursorBlinking": "solid",
+    "vim.smartRelativeLine": true,
+    "vim.statusBarColorControl": true,
+    "python.analysis.autoImportCompletions": true,
+    "cursor.cpp.enablePartialAccepts": true,
+    "cursor.general.disableHttp2": true,
+    "vim.overrideCopy": false,
+    "cursor.composer.textSizeScale": 1.15,
+    "files.autoSave": "afterDelay",
+    "cursorpyright.analysis.autoImportCompletions": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "biomejs.biome"
+    },
+    "git.blame.editorDecoration.enabled": true,
+    "editor.formatOnSave": true,
+    "workbench.settings.applyToAllProfiles": [
+
+    ]
+}
