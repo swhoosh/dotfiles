@@ -51,6 +51,29 @@
           "vertical" : 15.07
         }
       }
+    },
+    {
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0x1100",
+          "productName" : "Rapoo 2.4G Wireless Device",
+          "vendorID" : "0x24ae"
+        }
+      },
+      "pointer" : {
+        "acceleration" : 0,
+        "disableAcceleration" : false,
+        "speed" : 0.3514
+      },
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : true
+        },
+        "speed" : {
+          "vertical" : 30
+        }
+      }
     }
   ]
 }
