@@ -1,0 +1,4 @@
+keybinding:
+  commits:
+    moveDownCommit: '<C-d>' # Changed from <C-j>
+    moveUpCommit: '<C-u>'   # Changed from <C-k>
