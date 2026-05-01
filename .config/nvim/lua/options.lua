@@ -80,8 +80,8 @@ vim.keymap.set('n', '<space>x', '<cmd>source %<CR>')
 -- NOTE: trying mini.files
 -- vim.api.nvim_set_keymap('n', '<leader>pv', ':Explore<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<leader>pv', function()
-  require('mini.files').open()
-end, { noremap = true, silent = true, desc = 'Open Mini Files' })
+  require('mini.files').open(vim.fn.expand('%:p:h'))
+end, { noremap = true, silent = true, desc = 'Open Mini Files (buffer dir)' })
 
 -- Quick fix
 vim.keymap.set('n', '<C-n>', '<cmd>cnext<CR>')
