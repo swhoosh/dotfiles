@@ -5,7 +5,7 @@ return {
   dependencies = { 'nvim-treesitter/nvim-treesitter' },
   event = { 'BufReadPost', 'BufNewFile' },
   opts = {
-    max_lines = 4,
+    max_lines = 10,
     multiline_threshold = 4,
   },
 }

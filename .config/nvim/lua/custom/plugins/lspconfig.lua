@@ -235,7 +235,7 @@ return {
         --    https://github.com/pmizio/typescript-tools.nvim
         --
         -- But for many setups, the LSP (`tsserver`) will work just fine
-        -- ts_ls = {},
+        ts_ls = {},
         biome = {
           root_dir = require('lspconfig.util').root_pattern('biome.json', 'biome.jsonc', 'package.json', '.git'),
           single_file_support = false, -- disable for single file

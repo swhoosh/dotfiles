@@ -83,6 +83,16 @@ vim.keymap.set('n', '<leader>pv', function()
   require('mini.files').open(vim.fn.expand('%:p:h'))
 end, { noremap = true, silent = true, desc = 'Open Mini Files (buffer dir)' })
 
+vim.keymap.set('n', '<leader>pa', function()
+  vim.fn.setreg('+', vim.api.nvim_buf_get_name(0))
+  print 'Copied absolute path!'
+end, { desc = 'Copy absolute file path' })
+
+vim.keymap.set('n', '<leader>pr', function()
+  vim.fn.setreg('+', vim.fn.expand('%:.'))
+  print 'Copied relative path!'
+end, { desc = 'Copy relative file path' })
+
 -- Quick fix
 vim.keymap.set('n', '<C-n>', '<cmd>cnext<CR>')
 vim.keymap.set('n', '<C-p>', '<cmd>cprev<CR>')

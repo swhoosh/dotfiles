@@ -63,6 +63,9 @@ eval "$(zoxide init --cmd cd zsh)"
 # Go
 export PATH=$PATH:$HOME/go/bin
 # export GOPATH=$HOME/go
+export PATH="$PATH:$(go env GOPATH)/bin"
+export GOPRIVATE=*.wndv.co
 
 export NVM_LAZY_LOAD=true
 source "/Users/woosh/.zsh-nvm.zsh"
+export PATH="$HOME/.local/bin:$PATH"

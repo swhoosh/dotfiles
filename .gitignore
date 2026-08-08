@@ -4,3 +4,7 @@
 !.config/zed/settings.json
 
 .obsidian
+.config/yarn/*
+.config/argocd/*
+.config/herdr/*
+.config/gh/*
