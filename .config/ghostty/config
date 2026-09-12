@@ -1,11 +1,12 @@
 theme = tokyonight
 background = #090d17
-# background-opacity = 0.90
-# background-blur-radius = 100
+bold-color = #5cd1e6
+background-opacity = 0.92
+background-blur-radius = 100
 
 # font-family = JetBrainsMono
-font-family = BlexMono Nerd Font
-# font-family = IBS Plex Mono Nerd Font
+# font-family = BlexMono Nerd Font
+font-family = IBS Plex Mono Nerd Font
 font-size = 14
 
 # Cursor stuff
