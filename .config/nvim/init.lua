@@ -134,8 +134,10 @@ require('lazy').setup({
       end,
       formatters_by_ft = {
         lua = { 'stylua' },
-        -- Conform can also run multiple formatters sequentially
-        python = { 'isort', 'black' },
+        -- Conform can also run multiple formatters sequentially.
+        -- Ruff replaces isort + black. Deliberately no `ruff_fix` here: it would
+        -- delete not-yet-used imports every time you save mid-edit.
+        python = { 'ruff_organize_imports', 'ruff_format' },
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
         -- javascript = { "prettierd", "prettier", stop_after_first = true },
