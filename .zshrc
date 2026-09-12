@@ -52,6 +52,7 @@ alias ls='ls --color'
 alias pip='uv pip'
 alias gsw='git switch'
 # alias docker='podman'
+alias k='kubectl'
 
 # Tmux
 alias tn='tmux new-session -s' # Create a new tmux session with name after -s
