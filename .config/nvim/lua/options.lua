@@ -89,9 +89,24 @@ vim.keymap.set('n', '<leader>pa', function()
 end, { desc = 'Copy absolute file path' })
 
 vim.keymap.set('n', '<leader>pr', function()
-  vim.fn.setreg('+', vim.fn.expand('%:.'))
-  print 'Copied relative path!'
-end, { desc = 'Copy relative file path' })
+  local path = vim.fn.expand('%:.') .. ':' .. vim.fn.line('.')
+  vim.fn.setreg('+', path)
+  print('Copied ' .. path)
+end, { desc = 'Copy relative file path with line' })
+
+vim.keymap.set('x', '<leader>pr', function()
+  -- line('v') is the visual anchor, line('.') the cursor; order depends on drag direction
+  local start_line, end_line = vim.fn.line('v'), vim.fn.line('.')
+  if start_line > end_line then
+    start_line, end_line = end_line, start_line
+  end
+  local path = vim.fn.expand('%:.') .. ':' .. start_line
+  if end_line > start_line then
+    path = path .. '-' .. end_line
+  end
+  vim.fn.setreg('+', path)
+  print('Copied ' .. path)
+end, { desc = 'Copy relative file path with line range' })
 
 -- Quick fix
 vim.keymap.set('n', '<C-n>', '<cmd>cnext<CR>')
