@@ -11,7 +11,7 @@ return {
     }
 
     -- 2. Install your desired languages (this is a no-op if already installed)
-    local languages = { 'go', 'lua', 'bash', 'c', 'markdown', 'vim', 'vimdoc', 'python', 'javascript', 'typescript', 'rust' }
+    local languages = { 'go', 'lua', 'bash', 'c', 'markdown', 'vim', 'vimdoc', 'python', 'javascript', 'typescript', 'rust', 'jsonnet' }
     ts.install(languages)
 
     -- 3. Enable Highlighting (Required for this version)
