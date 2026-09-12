@@ -142,6 +142,7 @@ return {
         jsonnet_ls = {},
         ts_ls = {},
         terraformls = {},
+        kotlin_language_server = {},
 
         -- Python linting, import sorting and formatting.
         ruff = {},
