@@ -141,6 +141,7 @@ return {
         buf_ls = {},
         jsonnet_ls = {},
         ts_ls = {},
+        terraformls = {},
 
         -- Python linting, import sorting and formatting.
         ruff = {},
