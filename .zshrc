@@ -57,10 +57,6 @@ alias k='kubectl'
 # Tmux
 alias tn='tmux new-session -s' # Create a new tmux session with name after -s
 
-# Shell integrations
-eval "$(fzf --zsh)"
-eval "$(zoxide init --cmd cd zsh)"
-
 # Go
 export PATH=$PATH:$HOME/go/bin
 # export GOPATH=$HOME/go
@@ -69,3 +65,7 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 export NVM_LAZY_LOAD=true
 source "/Users/woosh/.zsh-nvm.zsh"
 export PATH="$HOME/.local/bin:$PATH"
+
+# Shell integrations
+eval "$(fzf --zsh)"
+eval "$(zoxide init --cmd cd zsh)"
